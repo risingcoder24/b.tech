@@ -1,0 +1,149 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SangliPolice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .navigation {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 30;
+        cursor: pointer;
+        color:  #1d1a7f;
+      }
+
+      .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 26%;
+        border: 3px solid  #1d1a7f;;;
+        border-radius: 50px;
+        margin: 5px;
+      }
+
+      .background {
+        background: currentColor;
+        background-size: cover;
+        background-blend-mode: darken;
+      }
+
+      .navlist {
+        display: flex;
+        align-items: center;
+      }
+
+      .navlist li {
+        list-style: none;
+        padding: 26px 30px;
+      }
+
+      .navlist li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .navlist li a:hover {
+        color:  #ff0000;
+      }
+
+      .firstsec {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+      }
+
+      .boxmain {
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:  black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 450px;
+      }
+
+      .textBig {
+        font-size: 32px;
+      }
+
+      .textsmall {
+        font-size: 18px;
+      }
+
+      .btn {
+        padding: 8px 20px;
+        margin: 7px 3px;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: grey;
+        cursor: pointer;
+        font: optional;
+        font-size: 15px;
+      }
+
+      .button{
+        position: relative;
+    }
+
+      .btn a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .btn a:hover {
+        color: rgb(75, 129, 3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation background">
+      <ul class="navlist">
+        <div class="logo"></div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="firstsec">
+      <div class="boxmain">
+        <div class="firsthalf">
+          <p class="textBig">SangliPolice</p>
+          <p class="textsmall">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            reiciendis cupiditate deserunt, facilis alias ducimus illum, quae
+            earum ipsum commodi dolorem et fuga, quis consequuntur?
+          </p>
+          <div class="buttons">
+           
+               
+           
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class = "button">
+        <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+    </div>
+   
+  </body>
+</html>
